@@ -1,3 +1,159 @@
+@font-face{font-family:'OpenSans-Light';src:url('../fonts/OpenSans-Light-20150604.woff')}
+
+/*Reset Css Starts*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul, li {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration: none;
+}
+/*Reset Css Starts*/
+
+/*Global Css Starts*/
+/*color*/
+.color-white{
+  color: #fff;
+}
+
+/*Font sizes*/
+.font7{
+  font-size: 7px;
+}
+.font8{
+  font-size: 8px;
+}
+.font10{
+  font-size: 10px;
+}
+.font12{
+  font-size: 12px;
+}
+.font14{
+  font-size: 14px;
+}
+.font20{
+  font-size: 20px;
+}
+.font35{
+  font-size: 35px;
+}
+
+/*Grid*/
+.row{
+  display: flex
+}
+.col-8{
+  width:80%;
+}
+.col-4{
+  width:20%
+}
+
+/*Padding*/
+.padd10{
+  padding: 10px;
+}
+.paddTopBtm5{
+  padding: 5px 0; 
+}
+.paddR15{
+  padding-right: 15px;
+}
+.padd0{
+  padding: 0;;
+}
+
+
+/*Aligment*/
+.v-align-mid{
+  vertical-align: middle;
+}
+.v-align-sub{
+  vertical-align: sub;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+
+
+/*Flex Box*/
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.flex-basis100{
+  flex-basis: 100%;
+}
+.inline-flex{
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+
+.border-right{
+  border-right: 1px solid #fff;
+}
+.border-btm{
+  border-bottom: 1px solid #ccc;
+}
+.pos-rel{
+  position: relative;
+}
+.pos-abs{
+  position: absolute;
+}
+/*Global Css Ends*/
+
+
 body {
   background: #000;
   font-family: "Helvetica Neue", Helvetica, 'OpenSans-Light', 'Segoe UI', Arial, sans-serif;
@@ -27,6 +183,7 @@ body {
   background: #fff;
   -webkit-transform: matrix3d(1, 0, 0, -0.00001, 0, 1, 0, 0, 0, 0, 1, 0, -112, -58, 0, 1);
           transform: matrix3d(1, 0, 0, -0.00001, 0, 1, 0, 0, 0, 0, 1, 0, -112, -58, 0, 1);
+          overflow: scroll;
 }
 
 @media screen and (max-width: 1350px) {
@@ -41,103 +198,39 @@ ul{
 }
 
 /*# sourceMappingURL=main.css.map */
+.logomark-sap{
+  background: transparent url(../img/SAP-Logo.png) no-repeat;
+  display: inline-block;
+  height: 40px;
+  width: 121px;
+  background-size: contain;
+}
+.logomark-concur{
+  background: transparent url(../img/logo-SAPConcur-white.svg) no-repeat;
+  display: inline-block;
+  height: 23px;
+  width: 160px;
+  background-size: contain;
+  background-position: right;
+}
+.font-family-opensans{
+  font-family: 'OpenSans-Light';
+}
 button{
   border: 0;
   background: transparent;
   padding: 0;
 }
-/*Flex Box*/
-.flex-wrap{
-  flex-wrap: wrap;
-}
-.flex-basis100{
-  flex-basis: 100%;
-}
-.inline-flex{
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -moz-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-.border-right{
-  border-right: 1px solid #fff;
-}
-.border-btm{
-  border-bottom: 1px solid #ccc;
-}
-.pos-rel{
-  position: relative;
-}
-.pos-abs{
-  position: absolute;
-}
-/*Aligment*/
-.v-align-mid{
-  vertical-align: middle;
-}
-.v-align-sub{
-  vertical-align: sub;
-}
-.text-right{
-  text-align: right;
-}
-.text-left{
-  text-align: left;
-}
-.text-center{
-  text-align: center;
-}
-/*Padding*/
-.padd10{
-  padding: 10px;
-}
-.paddR15{
-  padding-right: 15px;
-}
-.padd0{
-  padding: 0;;
-}
-/*Font sizes*/
-.font7{
-  font-size: 7px;
-}
-.font8{
-  font-size: 8px;
-}
-.font10{
-  font-size: 10px;
-}
-.font12{
-  font-size: 12px;
-}
-.font14{
-  font-size: 14px;
-}
-.font20{
-  font-size: 20px;
-}
-.font35{
-  font-size: 35px;
-}
+
+
 /*Header Starts*/
 .screen__inner img{
   width: 100%;
   height: 100%;
 }
-.row{
-  display: flex
-}
-.col-8{
-  width:80%;
-}
-.col-4{
-  width:20%
-}
-.navbar-container{
-  background: #525659;
-  height: 68px;
-  position: relative;
+
+.navbar-primary{
+  background: #383f46;
 }
 .navbar-container .logo-container{
   width:15%;
@@ -151,6 +244,7 @@ button{
 }
 .navbar-container__right-nav__top {
   padding: 2px 0;
+  background-image: linear-gradient(to right, #383f46 0%, #333333 100%);
 }
 .navbar-container__right-nav__top li{
   padding: 2px 3px;
@@ -160,17 +254,23 @@ i{
   padding-left: 3px;
 }
 .navbar-container__right-nav__bottom{
-  padding: 1px 15px 0px 0;
+  padding: 1px 15px 2px 0;
 }
 
 /*Secondary Header*/
-.secondary-header{
-  position: absolute;
-    left: 11px;
+.secondary-header__maincontent{
   width:93%;
+  padding: 5px 10px;
   margin: 0 auto;
   background: #fff;
-  padding: 5px 10px;
+}
+.secondary-header{
+  background-color: #ffffff;
+  background-image: -webkit-linear-gradient(top, #383f46 50%, #f9f9f9 50%);
+  background-image: -moz-linear-gradient(top, #383f46 50%, #f9f9f9 50%);
+  background-image: -ms-linear-gradient(top, #383f46 50%, #f9f9f9 50%);
+  background-image: -o-linear-gradient(top, #383f46 50%, #f9f9f9 50%);
+  /* background-image: linear-gradient(to bottom, #383f46 50%, #f9f9f9 50%); */
   -webkit-box-shadow: 0 8px 6px -6px #d2d2d2;
   -moz-box-shadow: 0 8px 6px -6px #d2d2d2;
        box-shadow: 0 8px 6px -6px #d2d2d2;
@@ -199,7 +299,7 @@ i{
 .main-content{
   width:95%;
   padding: 5px 10px;
-  margin:32px auto 0 auto;
+  margin: 15px auto 30px auto;
 }
 
 /*Task Container*/
@@ -221,18 +321,18 @@ i{
 }
 .task-container__head button{
   width: 100%;
-  padding-left: 39px;
     vertical-align: super;
 }
 .task-container__head button i{
   right: 5px;
 }
 .task-number{
-  top: -6px;
-  background: #1F69A5;
+  background: #1e69a6;
   font-weight: 500;
   padding: 10px;
   color:#fff;
+  margin-top: -13px;
+  display: inline-block;
 }
 
 .task-container__main__sub{
@@ -242,16 +342,29 @@ i{
   height: 75%;
 }
 .no-queue__content{
-  right: 37%;
-  top: 32%;
-  bottom: 50%;
-  left: 37%;
+  width: 100%;
+    margin-top: 15px;
 }
 .no-queue__content i{
   color: #ccc;
 }
 
 /*Footer Container*/
-.footer-container__logo{
-  width: 10%
+.footer{
+  background: #383f46;
+  padding: 10px;
+}
+.footer__top div, .footer__bottom .row div{
+  flex: 2;
+}
+.footer ul li{
+  list-style: none;
+  padding: 3px 0;
+}
+.footer ul li a{
+  color: #fff;
+  text-decoration: underline;
+}
+.copyright-text{
+  padding: 3px 0;
 }
