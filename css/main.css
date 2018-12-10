@@ -526,7 +526,7 @@ i{
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
-.calendar-container input{
+.form-group .calendar-container input{
   width: 86%;
   border-radius: 0px;
   border-top-right-radius: 6px;
