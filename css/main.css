@@ -556,7 +556,6 @@ i{
 /*Manage Expenses Starts*/
 .navbar-container  .navbar__manage-expense li a{
   color: #333;
-  padding: 5px;
 }
 .navbar__manage-expense ul{
   width: 100%;
@@ -590,7 +589,6 @@ i{
 }
 .manage-expense__crud{
     background-color: #E2E3E3;
-    padding: 5px;
     margin: 5px 0;
 }
 .manage-expense__details__head{
@@ -689,9 +687,6 @@ width: 80px;
     border: 1px solid #C0C2C4;
     border-top:none;
   }
-  .tab-content__data{
-    padding: 5px
-  }
   .tab-content__data  tr{
     border-bottom: 1px solid #999CA0;
   }
@@ -740,9 +735,6 @@ width: 95%;
 }
 .list-line li:last-child{
   border-right: none;
-}
-.list-line li a{
-  padding: 5px;
 }
 .list-line li a:hover{
   text-decoration: underline;
@@ -807,7 +799,6 @@ width: 95%;
   width:auto
 }
 .display-area__nav ul{
-  padding: 5px;
   background: #383F46;
 }
 .display-area__nav ul li{
