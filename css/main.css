@@ -154,6 +154,9 @@ a{
 .padd2-3{
   padding: 3px 2px;
 }
+.padd5{
+   padding: 5px;
+}
 /*Aligment*/
 .v-align-mid{
   vertical-align: middle;
@@ -199,7 +202,7 @@ a{
   display: inline-block;
 }
 .border-right{
-  border-right: 1px solid #fff;
+  border-right: 1px solid #ccc;
 }
 .border-btm{
   border-bottom: 1px solid #ccc;
@@ -702,19 +705,23 @@ width: 80px;
 /*Add Overlay Ends*/ 
 
 /*Create Attendee Starts*/
-  .create_attendee__type select{
+  .create_attendee__type .form-group select{
     border-top-right-radius: 0px;
     border-bottom-right-radius: 0px;
     padding-top: 5px;
-    padding-bottom: 4px;
+    padding-bottom: 3px;
+    width: 20%
   }
-  .create_attendee__type input{
+  .create_attendee__type .form-group  input{
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
+    border-left: 0;
+    width: 78%;
   }
-  .create_attendee__create input{
+  .create_attendee__create .form-group  input{
     margin-left: 2px;
     margin-right: 5px;
+    width: 34%;
   }
 /*Create Attendee Ends*/
 
@@ -727,6 +734,21 @@ width: 95%;
 }
  .form-group select{
   width: 100%;
+}
+.list-line li{
+  border-right: 1px solid #383F46;
+}
+.list-line li:last-child{
+  border-right: none;
+}
+.list-line li a{
+  padding: 5px;
+}
+.list-line li a:hover{
+  text-decoration: underline;
+}
+.list-line li{
+  margin-right: 5px;
 }
 .page-nav a{
     border: 1px solid #C0C2C4;
@@ -759,10 +781,13 @@ width: 95%;
   border-bottom-left-radius: 0px;
 }
 .common-combo-box.left.sm input,.common-combo-box.right.sm input{
-  width: 82%;
+  width: 79%;
 }
 .common-combo-box input{
   width: 90%; 
+}
+.dinner-container .tab-content .flex-2{
+      padding: 0 5px;
 }
 .common-combo-box button{
   border: 1px solid #ccc;
