@@ -721,9 +721,6 @@ width: 80px;
 /*Create Attendee Ends*/
 
 /*Dinner Page Starts*/
-.dinner-container .form-group{
-  padding: 0 3px;
-}
 .form-group input{
 width: 95%;
 }
