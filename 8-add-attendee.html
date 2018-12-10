@@ -5,13 +5,95 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div id="screen" class="screen ie-vertical-center">
-        <div class="screen__inner add-attendee">
-            <h1>Insert Ui Here</h1>
+        <div class="screen__inner manage">
+            <div class="manage-expense-container attendees-container">
+                <div class="row border-btm paddBtm5">
+                    <div>
+                        <h1 class="paddBtm5 font12">Attendees <i class="fa fa-times pull-right font10" aria-hidden="true"></i></h1>
+                        <p class="font10">Business Meals (Attendees) | $121.00</p>
+                    </div>
+                </div>
+                <div class="attendees-container__count paddTopBtm5">
+                    <h4 class="font8">Attendees: <span>2</span></h4>
+                </div>
+                <div class="manage-expense__crud">
+                    <button type="button" class="btn btn-lg btn-default font10">Add</button>
+                    <button type="button" disabled class="btn btn-lg btn-default font10">Remove</button>
+                </div>
+                <div class="manage-expense__details">
+                    <table>
+                        <thead>
+                            <tr class="font8 text-left">
+                                <th><input class="v-align-mid" id="LY3dOEVKJ2g" type="checkbox"></th>
+                                <th>Attendee Name</th>
+                                <th>Attendee Title</th>
+                                <th>Company</th>
+                                <th>Attendee Type</th>
+                                <th>Attendee Count</th>
+                                <th>Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="font8">
+                                <td>
+                                    <input id="LY3dOEVKJ2g" type="checkbox">
+                                </td>
+                                <td>Smith, John</td>
+                                <td>CFO</td>
+                                <td>Irvine Innoventions</td>
+                                <td>Business Guest</td>
+                                <td>1</td>
+                                <td>$60.50</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="overlay"></div>
+                    <div class="overlay__content">
+                        <h1 class="modal-title font10">
+                            <span>Add Attendee</span> <i class="fa fa-times pull-right" aria-hidden="true"></i>
+                        </h1>
+                        <div class="overlay__body">
+                            <div class="common-tab-nav">
+                                <ul class="font10">
+                                    <li class="text-center"><a href=""><span class="block-ele paddTopBtm2"><i class="fa fa-clock-o font12" aria-hidden="true"></i></span><span class="block-ele">Recent Attendees</span></a></li><li
+                                        class="text-center active"><a href=""><span class="block-ele paddTopBtm2"><i class="fa fa-plus font12" aria-hidden="true"></i></span><span class="block-ele">New Attendee</span></a></li><li
+                                            class="text-center"><a href=""><span class="block-ele paddTopBtm2"><i class="fa fa-users font12" aria-hidden="true"></i></span><span class="block-ele">Attendee Groups</span></a></li>
+                                </ul>
+                                <div class="tab-content active">
+                                    <div class="tab-content__data ">
+                                        <form action="">
+                                            <div class="create_attendee">
+                                                <div class="create_attendee__type marginTop10">
+                                                    <div class="form-group form-group-lg font10">
+                                                        <select class="font10 padd2-3" name="" id=""><option>Business Guest</option></select><input class="padd2-3" name="name" data-nuiexp="field-name" maxlength="32" type="text" class="form-control font10" value="">
+                                                    </div>
+                                                </div>
+                                                <div class="create_attendee__create marginTop10">
+                                                    <div class="form-group form-group-lg font10">
+                                                        <span>More Search Options</span>
+                                                        <input class="padd2-3" type="text">
+                                                        <span>Can't find an attendee? <a href="">Create New Attendee</a></span>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-footer text-right paddTopBtm5">
+                                                    <button type="button" class="btn btn-link cnqr-muted btn btn-link cnqr-muted-lg btn btn-link cnqr-muted-default font10">Close</button>
+                                                    <button type="button" class="btn btn-lg btn-default font10">Search</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <img src="img/surface-frame.png" class="laptop ie-vertical-center" />

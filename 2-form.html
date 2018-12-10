@@ -5,13 +5,71 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+     <link type="text/css" rel="stylesheet" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <div id="screen" class="screen ie-vertical-center">
         <div class="screen__inner form">
-            <h1>Insert Ui Here</h1>
+            <div class="create-report__modal">
+                <h1 class="modal-title font10">
+                    <span>Create New Report</span>  <i class="fa fa-times pull-right" aria-hidden="true"></i>
+                </h1>
+                <form action="">
+                    <div class="create-report__data">
+                        <div class="">
+                        <div class="col-4">
+                            <div class="form-group form-group-lg font10">
+                                <span class="block-ele"><label for="name" class="control-label-lg control-label">Report Name&nbsp;<span class="field-required">*</span></label></span>
+                                <input name="name" data-nuiexp="field-name" maxlength="32" type="text" class="form-control font10" value="">
+                            </div>
+                        </div>
+                         <div class="col-4">
+                            <div class="form-group form-group-lg font10">
+                                <span class="block-ele"><label for="name" class="control-label-lg control-label">Report Date&nbsp;</label></span>
+                                <div class=" calendar-container">
+                                    <button type="button" class="icon-calendar"><i class="fa fa-calendar font10" aria-hidden="true"></i></button><input name="name" data-nuiexp="field-name" maxlength="32" type="text" class="form-control font10" value="12/07/2018">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-4">
+                            <div class="form-group form-group-lg font10">
+                                <span class="block-ele"><label for="name" class="control-label-lg control-label">Business Purpose&nbsp;</label></span>
+                                <textarea name="purpose" data-nuiexp="field-purpose" maxlength="500" type="text" class="form-control"></textarea>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="">
+                        <div class="col-4">
+                            <div class="form-group form-group-lg font10">
+                                <span class="block-ele"><label for="name" class="control-label-lg control-label">Department &nbsp;</label></span>
+                                <select class="font10" name="" id=""><option>Sales</option></select>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="form-group form-group-lg font10">
+                                <span class="block-ele"><label for="name" class="control-label-lg control-label">Client &nbsp;</label></span>
+                                <select class="font10" name="" id=""><option></option></select>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="clear-fix"></div>
+                        <div class=" comment-section ">
+                             <div class="col-12">
+                             <div class="form-group form-group-lg font10">
+                                <span class="block-ele"><label for="name" class="control-label-lg control-label">Client &nbsp;</label></span>
+                                 <textarea name="purpose" data-nuiexp="field-purpose" maxlength="500" type="text" class="form-control"></textarea>
+                            </div>
+                             </div>
+                        </div>
+                        <div class="modal-footer text-right">
+                            <button type="button" class="btn btn-link cnqr-muted btn btn-link cnqr-muted-lg btn btn-link cnqr-muted-default font10">Cancel</button>
+                            <button type="button" class="btn btn-lg btn-default font10">Create Report</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
     <img src="img/surface-frame.png" class="laptop ie-vertical-center" />
